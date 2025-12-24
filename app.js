@@ -1,18 +1,12 @@
-let word=prompt("Write the word: ");
-let numbers="1234567890";
-let value=false;
+let a = [33, 4, 6, 5, 24];
+let len = a.length;
 
-for(let i=0;i<word.length;i++){
-  for(let j=0;j<numbers.length;j++){
-    if(word[i]==numbers[j]){
-      value=true;
-      break;
-    }
+for (let i = 0; i < len; i++) {
+  if (a[i] > 5) {
+    a.push(a[i]);
+  } else if (a[i] < 5) {
+    a.unshift(a[i]);
   }
 }
-if(value==false){
-  console.log("There isn't a number");
-  
-}else{
-  console.log("There is a number");
-}
+
+console.log(a);
