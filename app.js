@@ -1,12 +1,12 @@
 let a = [33, 4, 6, 5, 24];
-let len = a.length;
+let b = [];
 
-for (let i = 0; i < len; i++) {
-  if (a[i] > 5) {
-    a.push(a[i]);
-  } else if (a[i] < 5) {
-    a.unshift(a[i]);
-  }
-}
+for (let i = 0; i < a.length; i++) {
+  console.log(a[i]);}
 
-console.log(a);
+
+for (let i = 0; i < a.length; i++) {
+  b.push(a[i]*2);}
+
+for (let i = 0; i < b.length; i++) {
+  console.log(b[i]);}
