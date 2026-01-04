@@ -1,12 +1,19 @@
-let a = [33, 4, 6, 5, 24];
-let b = [];
+//Task1
+let a = ["Red", "Green", "Blue","Yellow"];
+let b= a.filter(Element=>{
+  return Element.length ==3;
+})
+console.log(b); 
 
-for (let i = 0; i < a.length; i++) {
-  console.log(a[i]);}
-
-
-for (let i = 0; i < a.length; i++) {
-  b.push(a[i]*2);}
-
-for (let i = 0; i < b.length; i++) {
-  console.log(b[i]);}
+//Task2
+let c = [3, 4, 5, 6, 7, 8, 9, 10, 11];
+let count1=0;
+let count2=0;
+c.forEach(Element=>{
+  if(Element%2==0){
+    count1++;}
+  else{
+    count2++;
+  }})
+console.log("Cün ədədlərin sayı: "+count1);
+console.log("Tək ədədlərin sayı: "+count2);
