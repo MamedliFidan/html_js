@@ -1,19 +1,18 @@
-//Task1
-let a = ["Red", "Green", "Blue","Yellow"];
-let b= a.filter(Element=>{
-  return Element.length ==3;
-})
-console.log(b); 
+let arr=[1,2,3,4,5,7,9];
+let sum=0;
+for(let i=0;i<arr.length;i++){
+    if(arr[i]%2!==0){
+        sum+=arr[i];
+    }
+}
+console.log("Sum of odd numbers:",sum);
 
-//Task2
-let c = [3, 4, 5, 6, 7, 8, 9, 10, 11];
-let count1=0;
-let count2=0;
-c.forEach(Element=>{
-  if(Element%2==0){
-    count1++;}
-  else{
-    count2++;
-  }})
-console.log("Cün ədədlərin sayı: "+count1);
-console.log("Tək ədədlərin sayı: "+count2);
+let arr2=["js","front","arrays","html","css"];
+let arr3=[];
+for(let i=0;i<arr2.length;i++){
+  let word = "";
+  for(let j =arr2[i].length-1 ;j>=0;j--){
+    word +=arr2[i][j];}
+  arr3.push(word);
+}
+console.log("Reversed strings array:",arr3);
