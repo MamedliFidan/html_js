@@ -1,0 +1,16 @@
+.name-list {
+  list-style: none;
+  padding: 0;
+  margin: 30px 50px 0 50px ;
+  width: 300px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.name-list li {
+  padding: 8px 12px;
+}
+
+.name-list li:nth-child(even) {
+  background-color: #e6f0ff; /* голубая полоса */
+}

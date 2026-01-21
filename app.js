@@ -1,11 +1,7 @@
-let obj = {
-  name: "John",
-  age() {
-    return Number(prompt("Enter your age:"));
-  },
-  agePension() {
-    return Number(65 - this.age());
-  }
+function names(){
+    let name=document.createElement("li");
+    name.innerText="John Doe";
+    return name;
 }
-
-console.log(obj.agePension());
+let list = document.querySelector("ul");
+list.append(names());
